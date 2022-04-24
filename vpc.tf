@@ -10,4 +10,7 @@ resource "aws_vpc" "stef_vpc_a" {
 resource "aws_subnet" "stef_vpc_a_subnet_private" {
   vpc_id = "${aws_vpc.stef_vpc_a.id}"
   cidr_block = "10.0.0.0/24"
+    tags = {
+        Name = "stef_vpc_a_subnet_private_terraform"
+    }  
 }
