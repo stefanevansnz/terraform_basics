@@ -7,5 +7,5 @@
 *.tfstate.*
 
 # variables
-*.tfvars
-*.tfvars.json
+# *.tfvars
+# *.tfvars.json
