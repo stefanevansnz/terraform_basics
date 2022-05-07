@@ -29,3 +29,13 @@ variable "VPC_PUBLIC_SUBNET_NAME" {
   type        = string
   default     = ""
 }
+
+variable "VPC_SG_NAME" {
+  type        = string
+  default     = ""  
+}
+
+variable "VPC_SG_CIDR_ACCESS" {
+  type        = string
+  default     = ""  
+}
