@@ -13,3 +13,19 @@ variable "VPC_PRIVATE_SUBNET_CIDR" {
 variable "VPC_PRIVATE_SUBNET_NAME" {
   type        = string
 }
+
+
+variable "VPC_PUBLIC_SUBNET_REQUIRED" {
+  type        = bool
+  default     = false
+}
+
+variable "VPC_PUBLIC_SUBNET_CIDR" {
+  type        = string
+  default     = ""
+}
+
+variable "VPC_PUBLIC_SUBNET_NAME" {
+  type        = string
+  default     = ""
+}

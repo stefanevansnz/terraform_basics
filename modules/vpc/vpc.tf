@@ -14,3 +14,12 @@ resource "aws_subnet" "stef_vpc_subnet_private" {
         Name = var.VPC_PRIVATE_SUBNET_NAME
     }  
 }
+
+resource "aws_subnet" "stef_vpc_subnet_public" {
+  count = var.VPC_PUBLIC_SUBNET_REQUIRED ? 1 : 0
+  vpc_id = aws_vpc.vpc.id
+  cidr_block = var.VPC_PUBLIC_SUBNET_CIDR
+    tags = {
+        Name = var.VPC_PUBLIC_SUBNET_NAME
+    }  
+}
